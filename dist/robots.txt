@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://c7313y-rgb.github.io/AI-skillcheck/sitemap.xml

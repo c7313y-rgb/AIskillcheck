@@ -1,0 +1,148 @@
+import type { Question } from "./types";
+
+export const QUESTIONS: readonly Question[] = [
+  {
+    id: "q01",
+    category: "AI基礎理解",
+    text: "生成AIの得意・不得意、誤回答が起きる理由を説明できる",
+    weights: { literacy: 1, governance: 0.3 },
+  },
+  {
+    id: "q02",
+    category: "AI基礎理解",
+    text: "業務や学習の中で、AIに任せる部分と人が確認する部分を切り分けられる",
+    weights: { literacy: 0.8, business: 0.5, governance: 0.4 },
+  },
+  {
+    id: "q03",
+    category: "プロンプト活用",
+    text: "目的、条件、出力形式を指定して、文書作成・要約・調査を行える",
+    weights: { prompt: 1, literacy: 0.2 },
+  },
+  {
+    id: "q04",
+    category: "プロンプト活用",
+    text: "AIの回答をそのまま使わず、根拠確認・追加質問・修正指示で品質を上げられる",
+    weights: { prompt: 0.8, governance: 0.5 },
+  },
+  {
+    id: "q05",
+    category: "業務改善",
+    text: "日常業務の手順を分解し、AIで短縮・自動化できる箇所を見つけられる",
+    weights: { business: 1, prompt: 0.3 },
+  },
+  {
+    id: "q06",
+    category: "業務改善",
+    text: "Excel、スプレッドシート、議事録、レポートなどの業務をAIで効率化できる",
+    weights: { business: 0.9, data: 0.3, prompt: 0.3 },
+  },
+  {
+    id: "q07",
+    category: "データ活用",
+    text: "データやグラフから示唆を読み取り、意思決定や提案に活かせる",
+    weights: { data: 1, business: 0.4 },
+  },
+  {
+    id: "q08",
+    category: "データ活用",
+    text: "AIに分析の観点を出させ、仮説、KPI、検証方法を整理できる",
+    weights: { data: 0.8, business: 0.6, prompt: 0.3 },
+  },
+  {
+    id: "q09",
+    category: "開発・自動化",
+    text: "ノーコード/ローコードで、簡単な業務Botやワークフローを設計するイメージがある",
+    weights: { automation: 1, business: 0.4 },
+  },
+  {
+    id: "q10",
+    category: "開発・自動化",
+    text: "AIコーディング支援を使って、修正案、テスト、簡単なコード生成を進められる",
+    weights: { automation: 1, prompt: 0.3, governance: 0.2 },
+  },
+  {
+    id: "q11",
+    category: "ガバナンス",
+    text: "個人情報、著作権、機密情報、社内データ利用時の注意点を理解している",
+    weights: { governance: 1, literacy: 0.3 },
+  },
+  {
+    id: "q12",
+    category: "ガバナンス",
+    text: "AI利用ルール、承認フロー、レビュー観点をチーム内で整える必要性を説明できる",
+    weights: { governance: 1, business: 0.4 },
+  },
+  {
+    id: "q13",
+    category: "DX推進",
+    text: "AI導入テーマを、効果・実現性・リスク・優先順位で評価できる",
+    weights: { business: 0.9, data: 0.5, governance: 0.3 },
+  },
+  {
+    id: "q14",
+    category: "DX推進",
+    text: "現場ヒアリングから課題を抽出し、AI活用の要件や成果物に落とし込める",
+    weights: { business: 1, prompt: 0.3, data: 0.2 },
+  },
+  {
+    id: "q15",
+    category: "データマネジメント",
+    text: "社内データの所在、権限、品質、更新頻度を確認する観点を持っている",
+    weights: { data: 0.9, governance: 0.5 },
+  },
+  {
+    id: "q16",
+    category: "データマネジメント",
+    text: "RAGやナレッジ検索など、自社データをAIに参照させる仕組みを大まかに説明できる",
+    weights: { data: 0.8, automation: 0.5, governance: 0.4 },
+  },
+  {
+    id: "q17",
+    category: "開発・実装",
+    text: "Dify、Zapier、Make、Power Automateなどの自動化ツールで実装を検討できる",
+    weights: { automation: 1, business: 0.4 },
+  },
+  {
+    id: "q18",
+    category: "開発・実装",
+    text: "AIエージェント、API連携、評価ログ、運用改善の基本概念を理解している",
+    weights: { automation: 0.9, governance: 0.5, data: 0.4 },
+  },
+  {
+    id: "q19",
+    category: "情報発信",
+    text: "AIを使って企画書、LP、メール、SNS、プレゼンの初稿を作成し、目的に合わせて修正できる",
+    weights: { prompt: 0.9, business: 0.4, literacy: 0.2 },
+  },
+  {
+    id: "q20",
+    category: "情報発信",
+    text: "AI生成物のトーン、事実確認、引用、ブランド表現を確認して公開判断できる",
+    weights: { prompt: 0.6, governance: 0.7 },
+  },
+  {
+    id: "q21",
+    category: "学習・育成",
+    text: "自分やチームのAIスキル不足を言語化し、学習計画に落とし込める",
+    weights: { literacy: 0.6, business: 0.5, governance: 0.2 },
+  },
+  {
+    id: "q22",
+    category: "学習・育成",
+    text: "AI活用を一度で終わらせず、定着・共有・改善まで続ける仕組みを考えられる",
+    weights: { business: 0.8, governance: 0.5 },
+  },
+  {
+    id: "q23",
+    category: "価値創出",
+    text: "AI活用をコスト削減だけでなく、売上、顧客体験、新規サービスに結びつけて考えられる",
+    weights: { business: 0.9, data: 0.4, prompt: 0.3 },
+  },
+  {
+    id: "q24",
+    category: "価値創出",
+    text: "AI導入後の効果測定、KPI、ROI、改善サイクルを設計するイメージがある",
+    weights: { business: 0.8, data: 0.7, governance: 0.3 },
+  },
+] as const;
